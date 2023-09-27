@@ -1,5 +1,5 @@
 
-.popular .card{
+.home .card{
     background-color: white;
     color: black;
     font-size: 14px;
@@ -9,7 +9,7 @@
     gap: 10px;
 }
 
-.popular .card img{
+.home .card img{
     width: 50px;
     margin: auto;
 }

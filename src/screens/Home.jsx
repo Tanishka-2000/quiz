@@ -14,6 +14,24 @@ function Home() {
           </div>
         </div>   
       </Header>
+      <div className='explore'>
+        <div className='top'>
+          <h2>Explore</h2>
+          <button>View all</button>
+        </div>
+        <div className='grid'>
+          <Category name='Space' icon='space.png' />
+          <Category name='History' icon='history.png' />
+          <Category name='Sports' icon='sports.png' />
+          <Category name='Space' icon='space.png' />
+          <Category name='History' icon='history.png' />
+          <Category name='Sports' icon='sports.png' />
+          <Category name='Space' icon='space.png' />
+          <Category name='History' icon='history.png' />
+          <Category name='Sports' icon='sports.png' />
+        </div>
+
+      </div>
       <div>Home</div>
     </div>
   )
