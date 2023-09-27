@@ -62,6 +62,8 @@ button.back span{
 
 .top-bar p{
     flex: 1;
+    text-align: center;
+    color: white;
 }
 
 .top-bar .icon{

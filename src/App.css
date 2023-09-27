@@ -1,0 +1,19 @@
+.home .popular{
+    margin-top: 25px;
+    display: grid;
+    gap: 10px;
+}
+.home .popular{
+    color: white;
+}
+
+.home .popular h2{
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.home .popular .grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}

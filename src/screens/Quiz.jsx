@@ -1,8 +1,11 @@
 import React from 'react'
+import { Header } from '../components'
 
 function Quiz() {
   return (
-    <div>Quiz</div>
+    <div>
+      <Header icon='line.png' iconType='icon'></Header>
+    </div>
   )
 }
 
