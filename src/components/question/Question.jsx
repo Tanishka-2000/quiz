@@ -3,16 +3,23 @@ import CircularProgress from '@mui/material/CircularProgress';
 import LinearProgress from '@mui/material/LinearProgress';
 import './styles.css'
 
-function Question({ question, number, total, correct, wrong }) {
+function Question({ question, number, total, correct, wrong, show, setShow }) {
     const [timeLeft, setTimeLeft] = useState(20);
     let timer;
     useEffect(() => {
         timer = setInterval(() => {
-            if(timeLeft === 0) clearInterval(timer)
-            else setTimeLeft(p => p-1)
+            if(timeLeft === 0){
+                clearInterval(timer)
+                setShow(true)
+            }else setTimeLeft(p => p-1)
         }, 1000);
+
         return () => clearInterval(timer);
     })
+
+    useEffect(() => {
+        if(show && timer) clearInterval(timer);
+    }, [show])
     return (
         <div className='question'>
             <div className='top'>

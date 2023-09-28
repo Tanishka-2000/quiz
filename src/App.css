@@ -36,3 +36,32 @@
 .home .explore .card{
     box-shadow: 2px 2px 4px 1px #ccc
 } 
+
+
+/* ----------quiz page--------- */
+.options{
+    transform: translateY(-40px);
+    padding-inline: 40px;
+    list-style-type: none;
+}
+
+.btn-container{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.nxt-btn{
+    padding: 10px;
+    background-color: #FEC100;
+    border-radius: 10px;
+    color: white;
+    font-size: 16px;
+    outline: none;
+    border: none;
+}
+
+.nxt-btn:disabled{
+    opacity: .7;
+    cursor:not-allowed;
+}

@@ -1,0 +1,10 @@
+.option-item{
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 10px;
+    border: 2px solid #FEC100;
+    margin-block: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
