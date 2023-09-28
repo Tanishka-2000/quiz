@@ -1,10 +1,10 @@
 import React from 'react'
-import { Header } from '../components'
+import { Header, Score } from '../components'
 
 function Result() {
   return (
     <div>
-      <Header></Header>
+      <Header><Score points={100}/></Header>
     </div>
   )
 }

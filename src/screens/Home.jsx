@@ -30,9 +30,7 @@ function Home() {
           <Category name='History' icon='history.png' />
           <Category name='Sports' icon='sports.png' />
         </div>
-
       </div>
-      <div>Home</div>
     </div>
   )
 }
