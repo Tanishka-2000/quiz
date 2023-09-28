@@ -1,0 +1,30 @@
+.performers{
+    background-color: white;
+    border-top-left-radius:20px;
+    border-top-right-radius: 20px;
+    padding: 20px 20px 0;
+    list-style-type: none;
+    /* transform: translateY(-70px); */
+    margin-top: -70px;
+    position: relative;
+    z-index: 1;
+}
+
+.performers li{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 14px;
+    padding-block: 10px;
+}
+
+.performers li .points{
+    margin-left: auto;
+    background-color: #FFC10280;
+    padding: 5px 12px;
+    border-radius: 15px;
+}
+
+.performers .other{
+    border-top: 4px solid #ddd;
+}
