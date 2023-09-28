@@ -1,0 +1,44 @@
+.topers{
+    display: flex;
+    justify-content: center;
+    color: white;
+    margin-top: 20px;
+}
+
+.topers .topper{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    gap: 8px;
+}
+
+.topers .board{
+    width: 100px;
+    height: 200px;
+    background: rgba(0,0,0,.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+}
+
+.topers .topper:nth-of-type(1) .board{
+    transform: skewX(10deg);
+}
+.topers .topper:nth-of-type(2) .board{
+    height: 260px;
+    transform: skewY(-10deg);
+}
+.topers .topper:nth-of-type(3) .board{
+    transform: skewY(15deg) rotateZ(10deg);
+}
+
+.topers .board p:nth-of-type(1){
+    font-size: 75px;
+    font-weight: 700;
+    height: 90px;
+}
+.topers .board p:nth-of-type(2){
+    font-size: 15px;
+}
