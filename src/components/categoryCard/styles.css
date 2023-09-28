@@ -13,3 +13,8 @@
     width: 50px;
     margin: auto;
 }
+
+.home a{
+    text-decoration: none;
+    color: black;
+}

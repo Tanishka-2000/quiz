@@ -23,3 +23,8 @@
     place-content: center;
     font-size: 35px;
 }
+
+.controls a{
+    text-decoration: none;
+    color: black;
+}
