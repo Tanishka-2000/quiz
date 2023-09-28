@@ -3,7 +3,7 @@ import "./styles.css";
 
 function Card({ name, icon}) {
   return (
-    <Link to='quiz'>
+    <Link to={'quiz/' + name.toLowerCase()}>
       <div className='card'>
           <p>{ name }</p>
           <img src={icon}/>

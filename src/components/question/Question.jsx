@@ -3,28 +3,34 @@ import CircularProgress from '@mui/material/CircularProgress';
 import LinearProgress from '@mui/material/LinearProgress';
 import './styles.css'
 
-function Question({ question, number, total, correct, wrong, show, setShow }) {
+function Question({ question, number, total, correct, wrong, show, selectAnswer }) {
     const [timeLeft, setTimeLeft] = useState(20);
     let timer;
     useEffect(() => {
-        timer = setInterval(() => {
-            if(timeLeft === 0){
+        function startTimer(){ 
+            if(timeLeft === 0) {
                 clearInterval(timer)
-                setShow(true)
+                selectAnswer("")
             }else setTimeLeft(p => p-1)
-        }, 1000);
+        }
 
+        timer = setInterval(startTimer, 1000);
         return () => clearInterval(timer);
     })
 
     useEffect(() => {
         if(show && timer) clearInterval(timer);
     }, [show])
+
+    useEffect(() => {
+        setTimeLeft(20)
+    }, [question])
+
     return (
         <div className='question'>
             <div className='top'>
                 <div className='correct'>
-                    <span>0{correct}</span>
+                    <span>{correct > 9 ? correct : '0' + correct}</span>
                     <LinearProgress
                         variant="determinate"
                         color="success"
@@ -43,9 +49,9 @@ function Question({ question, number, total, correct, wrong, show, setShow }) {
                         variant="determinate"
                         color="error"
                         value={100}
-                        sx={{ height: '8px', borderRadius: '4px',  width: ((correct/total) * 100 + 'px')}}
+                        sx={{ height: '8px', borderRadius: '4px',  width: ((wrong/total) * 100 + 'px')}}
                     />
-                    <span>0{wrong}</span>
+                    <span>{wrong > 9 ? wrong : '0' + wrong}</span>
                 </div>
             </div>
             <div className='middle'>Questiions { number }/{ total }</div>

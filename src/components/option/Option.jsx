@@ -3,7 +3,6 @@ import CorrectIcon from '@mui/icons-material/CheckCircle'
 import './styles.css'
 
 function Option({ optionText, correct, selected, selectAnswer, show }) {
-
   const handleClick = () => {
     selectAnswer(optionText)
   }

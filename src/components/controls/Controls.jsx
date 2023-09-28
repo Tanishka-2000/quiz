@@ -10,7 +10,7 @@ import './styles.css'
 function Controls() {
   return (
     <div className='controls'>
-        <Link to='/quiz'>
+        <Link to='/'>
             <div className='item'>
                 <div className='icon'>
                     <PlayAgainIcon sx={{color:'white'}} />
